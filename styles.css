@@ -15,7 +15,7 @@ h1 {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 60px;
 }
 
 .common {
@@ -49,6 +49,7 @@ h1 {
 
 .show-answer {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .tags {
@@ -57,19 +58,16 @@ h1 {
   gap: 15px;
 }
 
-nav {
+.navbar {
+  display: flex;
+  list-style: none;
+  padding-top: 20px;
   position: fixed;
   left: 0;
   bottom: 0;
   z-index: 1;
   background-color: rgb(172, 168, 168);
-  /* padding-top: -5px; */
-}
-
-.navbar {
-  display: flex;
-  list-style: none;
-  padding-top: 20px;
+  cursor: pointer;
 }
 
 .homebutton {
@@ -81,5 +79,5 @@ nav {
 }
 
 .profile {
-  width: 43%;
+  width: 37%;
 }
