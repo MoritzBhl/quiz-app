@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -55,9 +57,19 @@ h1 {
   gap: 15px;
 }
 
+nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgb(172, 168, 168);
+  /* padding-top: -5px; */
+}
+
 .navbar {
   display: flex;
   list-style: none;
+  padding-top: 20px;
 }
 
 .homebutton {
