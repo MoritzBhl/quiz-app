@@ -54,3 +54,20 @@ h1 {
   justify-content: space-around;
   gap: 15px;
 }
+
+.navbar {
+  display: flex;
+  list-style: none;
+}
+
+.homebutton {
+  width: 35%;
+}
+
+.bookmark {
+  width: 40%;
+}
+
+.profile {
+  width: 43%;
+}
