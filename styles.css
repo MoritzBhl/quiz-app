@@ -1,12 +1,49 @@
-body {
-  margin: 15px;
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0 20px 0;
+  background-color: rgb(208, 151, 77);
+  border-radius: 15px;
 }
 
 .section-body {
-  border: 1px solid black;
-  border-radius: 15px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
-.question-1 {
+.common {
+  background-color: rgb(143, 217, 179);
+  border: 1px solid black;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.question-bookmark {
+  width: 10%;
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.answer-button {
+  display: block;
+  justify-content: center;
+}
+
+.show-answer {
+  text-decoration: none;
+}
+
+.tags {
+  display: flex;
+  gap: 15px;
 }
