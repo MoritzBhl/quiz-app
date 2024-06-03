@@ -34,9 +34,15 @@ h1 {
   right: 0;
 }
 
-.answer-button {
-  display: block;
+.card-button {
+  display: flex;
   justify-content: center;
+  padding-bottom: 20px;
+}
+
+.answer-button {
+  width: 40%;
+  height: 3rem;
 }
 
 .show-answer {
@@ -45,5 +51,6 @@ h1 {
 
 .tags {
   display: flex;
+  justify-content: space-around;
   gap: 15px;
 }
