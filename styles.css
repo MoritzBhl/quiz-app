@@ -6,6 +6,7 @@
 
 body {
   padding-bottom: 80px;
+  background-color: aqua;
 }
 
 h1 {
@@ -37,6 +38,7 @@ h1 {
   position: absolute;
   top: 0;
   right: 10px;
+  color: white;
 }
 
 .card-button {
@@ -61,18 +63,23 @@ h1 {
   gap: 15px;
 }
 
-/* .navbar {
+footer {
   display: flex;
-  border: 1px solid black;
-  background-color: gray;
+}
+
+.navbar {
+  display: block;
+  border-top: 1px solid black;
+  background-color: rgb(190, 187, 187);
   cursor: pointer;
   position: fixed;
   bottom: 0;
   left: 0;
-  right: o;
+  right: 0;
 }
 
 ul {
   list-style: none;
   display: flex;
-} */
+  justify-content: space-around;
+}
