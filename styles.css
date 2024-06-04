@@ -73,7 +73,7 @@ footer {
 
 .navbar {
   display: block;
-  border-top: 1px solid black;
+  border-top: 5px solid #806c59;
   background-color: #ccae8f;
   cursor: pointer;
   position: fixed;
