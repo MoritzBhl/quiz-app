@@ -33,11 +33,10 @@ h1 {
   padding-right: 10px;
 }
 
-.question-bookmark {
-  width: 10%;
+.card-bookmark {
   position: absolute;
-  top: -20px;
-  right: 0;
+  top: 0;
+  right: 10px;
 }
 
 .card-button {
@@ -77,6 +76,3 @@ ul {
   list-style: none;
   display: flex;
 } */
-
-.fa-bookmark {
-}
