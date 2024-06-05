@@ -1,0 +1,48 @@
+.all-cards-body {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.card {
+  background-color: #bf9060;
+  border: 5px solid #806c59;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-bookmark {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #806c59;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.answer-button {
+  background-color: #ccae8f;
+  padding: 15px 20px;
+  border: 1px solid #806c59;
+  border-radius: 10px;
+}
+
+.show-answer {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
