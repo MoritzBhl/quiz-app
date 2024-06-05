@@ -31,10 +31,9 @@
 
 .answer-button {
   background-color: #ccae8f;
-  width: 40%;
-  height: 3rem;
+  padding: 15px 20px;
   border: 1px solid #806c59;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .show-answer {
