@@ -24,7 +24,7 @@ h1 {
   gap: 60px;
 }
 
-.common-card {
+.card {
   background-color: #bf9060;
   border: 5px solid #806c59;
   border-radius: 15px;
@@ -67,7 +67,7 @@ h1 {
   gap: 15px;
 }
 
-footer {
+.footer {
   display: flex;
 }
 
@@ -82,12 +82,12 @@ footer {
   right: 0;
 }
 
-ul {
+.navbar-row {
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
 
-i {
+.navbar-buttons {
   color: #806c59;
 }
