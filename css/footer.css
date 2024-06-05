@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+}
+
+.navbar {
+  display: block;
+  border-top: 5px solid #806c59;
+  background-color: #ccae8f;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  left: -40px;
+  right: 0;
+}
+
+.navbar-row {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-buttons {
+  color: #806c59;
+}

@@ -1,0 +1,10 @@
+@import "./global.css";
+@import "./header.css";
+@import "./cards.css";
+@import "./footer.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
