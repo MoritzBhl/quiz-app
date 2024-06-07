@@ -1,9 +1,4 @@
-.footer {
-  display: flex;
-}
-
 .navbar {
-  display: block;
   border-top: 5px solid #806c59;
   background-color: #ccae8f;
   cursor: pointer;
@@ -16,9 +11,49 @@
 .navbar-row {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  min-height: 87px;
+}
+
+.home-button {
+  min-width: 200px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookmark-button {
+  min-width: 200px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-button {
+  min-width: 200px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-buttons {
   color: #806c59;
+}
+
+.home-button:hover {
+  background-color: gray;
+}
+
+.bookmark-button:hover {
+  background-color: gray;
+}
+
+.profile-button:hover {
+  background-color: gray;
 }
