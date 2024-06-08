@@ -18,12 +18,19 @@
     <main>
       <section class="about-me card">
         <img src="" alt="a profile picture" />
-        <h2>Name</h2>
+        <form action="submit" method="post">
+          <label for="name">Enter your first and last name</label>
+          <input type="text" id="name" name="name" required />
+        </form>
         <p>About me text</p>
       </section>
       <section class="counter card">
-        <button class="question-counter">Created Questions</button>
-        <button class="bookmarks-counter">Created Bookmarks</button>
+        <button class="question-counter">
+          <i class="fas fa-question fa-3x navbar-buttons"></i>Created Questions
+        </button>
+        <button class="bookmarks-counter">
+          <i class="fas fa-bookmark fa-3x navbar-buttons"></i>Created Bookmarks
+        </button>
       </section>
       <section class="settings card">
         <h2>Settings</h2>
@@ -35,7 +42,7 @@
       <nav class="navbar">
         <ul class="navbar-row">
           <li class="home-button">
-            <a href="">
+            <a href="./index.html">
               <i class="fas fa-home fa-3x navbar-buttons"></i>
             </a>
           </li>
@@ -45,7 +52,7 @@
             </a>
           </li>
           <li class="profile-button">
-            <a href="./profilepage.html">
+            <a href="">
               <i class="fas fa-user fa-3x navbar-buttons"></i>
             </a>
           </li>
