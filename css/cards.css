@@ -36,9 +36,14 @@
   border-radius: 10px;
 }
 
+.answer-button:hover {
+  background-color: gray;
+}
+
 .show-answer {
   text-decoration: none;
   cursor: pointer;
+  color: black;
 }
 
 .tags {
