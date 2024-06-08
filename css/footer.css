@@ -1,5 +1,3 @@
-/* auf desktop optimiert  */
-
 .navbar {
   border-top: 5px solid #806c59;
   background-color: #ccae8f;
@@ -53,4 +51,10 @@
 
 .profile-button:hover {
   background-color: gray;
+}
+
+@media (min-width: 900px) {
+  .navbar-row {
+    min-height: 6vh;
+  }
 }
