@@ -16,23 +16,36 @@
   </header>
   <body id="home" data-js="body" class="dark-mode">
     <main>
-      <section class="about-me card">
-        <img src="" alt="a profile picture" />
-        <form action="submit" method="post">
-          <label for="name">Enter your first and last name</label>
-          <input type="text" id="name" name="name" required />
-        </form>
-        <p>About me text</p>
-      </section>
-      <section class="counter card">
+      <form action="submit" method="post" class="form card" autocomplete="on">
+        <label for="picture"></label>
+        <input type="file" id="picture" name="picture">
+      <img src="" alt="profile picture"/>
+      </input>
+        <label for="firstName"></label>
+        <input type="text" placeholder="last name" id="firstName" name="firstName" minlength="4" maxlength="30" required />
+        <label for="lastName"></label>
+        <input type="text" placeholder="first name" id="lastName" name="lastName" minlength="4" maxlength="30" required />
+        <label for="email"></label>
+        <input type="email" placeholder="example@gmail.com" id="email" name="email" required />
+        <label for="about-me"></label>
+        <textarea name="about-me" placeholder="About me text" id="about-me" rows="10"></textarea>
+        <div class="terms-and-conditions">
+          <label for="terms-and-conditions"></label>
+          <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" required>
+          <p>I accept the terms and conditions</p>
+        </div>
+      
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+      <div>
         <button class="question-counter">
           <i class="fas fa-question fa-3x navbar-buttons"></i>Created Questions
         </button>
         <button class="bookmarks-counter">
           <i class="fas fa-bookmark fa-3x navbar-buttons"></i>Created Bookmarks
         </button>
-      </section>
-      <section class="settings card">
+      </div>
+      <section>
         <h2>Settings</h2>
         <p>Dark Mode</p>
         <button data-js="toggle-button">Toggle button dark mode</button>
