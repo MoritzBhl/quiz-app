@@ -20,7 +20,10 @@
   position: absolute;
   top: 0;
   right: 10px;
-  color: #806c59;
+  color: black;
+}
+.toggle-bookmark {
+  color: white;
 }
 
 .button-section {
@@ -36,9 +39,14 @@
   border-radius: 10px;
 }
 
+.answer-button:hover {
+  background-color: gray;
+}
+
 .show-answer {
   text-decoration: none;
   cursor: pointer;
+  color: black;
 }
 
 .tags {

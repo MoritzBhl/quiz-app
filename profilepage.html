@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Sport Quiz App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="./index.js" defer></script>
+  </head>
+  <header>
+    <h1 class="header">Profile Page</h1>
+  </header>
+  <body id="home" data-js="body" class="dark-mode">
+    <main>
+      <form action="submit" method="post" class="form card" autocomplete="on">
+        <label for="picture"></label>
+        <input type="file" id="picture" name="picture">
+      <img src="" alt="profile picture"/>
+      </input>
+        <label for="firstName"></label>
+        <input type="text" placeholder="last name" id="firstName" name="firstName" minlength="4" maxlength="30" required />
+        <label for="lastName"></label>
+        <input type="text" placeholder="first name" id="lastName" name="lastName" minlength="4" maxlength="30" required />
+        <label for="email"></label>
+        <input type="email" placeholder="example@gmail.com" id="email" name="email" required />
+        <label for="about-me"></label>
+        <textarea name="about-me" placeholder="About me text" id="about-me" rows="10"></textarea>
+        <div class="terms-and-conditions">
+          <label for="terms-and-conditions"></label>
+          <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" required>
+          <p>I accept the terms and conditions</p>
+        </div>
+      
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+      <div class="button-counter">
+        <button class="question-counter">
+          <i class="fas fa-question fa-3x navbar-buttons"></i>Created Questions
+        </button>
+        <button class="bookmarks-counter">
+          <i class="fas fa-bookmark fa-3x navbar-buttons"></i>Created Bookmarks
+        </button>
+      </div>
+      <section>
+        <h2>Settings</h2>
+        <p>Dark Mode</p>
+        <button data-js="toggle-button">Toggle button dark mode</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="navbar">
+        <ul class="navbar-row">
+          <li class="home-button">
+            <a href="./index.html">
+              <i class="fas fa-home fa-3x navbar-buttons"></i>
+            </a>
+          </li>
+          <li class="bookmark-button">
+            <a href="./bookmarks.html">
+              <i class="fas fa-bookmark fa-3x navbar-buttons"></i>
+            </a>
+          </li>
+          <li class="form-button">
+            <a href="./form.html">
+              <i class="fas fa-plus fa-3x navbar-buttons"></i>
+            </a>
+          </li>
+          <li class="profile-button">
+            <a href="">
+              <i class="fas fa-user fa-3x navbar-buttons"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

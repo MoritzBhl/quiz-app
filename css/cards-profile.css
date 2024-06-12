@@ -1,0 +1,17 @@
+.form {
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.submit-button {
+}
+
+.terms-and-conditions {
+  display: flex;
+  gap: 10px;
+}
+
+.button-counter {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
