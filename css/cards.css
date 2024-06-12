@@ -39,12 +39,6 @@
   border-radius: 10px;
 }
 
-.hidden {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
-}
-
 .answer-button:hover {
   background-color: gray;
 }
