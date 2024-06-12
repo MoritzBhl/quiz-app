@@ -20,7 +20,10 @@
   position: absolute;
   top: 0;
   right: 10px;
-  color: #ffffff;
+  color: black;
+}
+.toggle-bookmark {
+  color: white;
 }
 
 .button-section {
@@ -34,6 +37,12 @@
   padding: 15px 20px;
   border: 1px solid #806c59;
   border-radius: 10px;
+}
+
+.hidden {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
 }
 
 .answer-button:hover {
