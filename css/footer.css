@@ -20,21 +20,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 33.5%;
+  flex-basis: 25%;
 }
 
 .bookmark-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 33%;
+  flex-basis: 25%;
 }
 
 .profile-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 33.5%;
+  flex-basis: 25%;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 25%;
 }
 
 .navbar-buttons {
@@ -50,6 +57,10 @@
 }
 
 .profile-button:hover {
+  background-color: gray;
+}
+
+.form-button:hover {
   background-color: gray;
 }
 
