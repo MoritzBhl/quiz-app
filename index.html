@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <script src="./index.js" defer></script>
   </head>
   <header>
     <h1 class="header">Sport Quiz App</h1>
@@ -19,14 +20,24 @@
         <section class="card question-1">
           <h2>What ist the so called "Big Fish" in Darts?</h2>
           <a href="#question-1">
-            <i class="fas fa-bookmark fa-2xl card-bookmark"></i>
+            <i
+              class="fas fa-bookmark fa-2xl card-bookmark toggle-bookmark"
+              data-js="bookmarkIcon"
+            ></i>
           </a>
           <div class="button-section">
-            <button class="answer-button">
-              <a href="" class="show-answer">Show Answer</a>
+            <button class="answer-button" data-js="answerButton">
+              <a href="" class="show-answer" data-js="showAnswer"
+                >Show Answer</a
+              >
+              <a href="" hidden class="hidden" data-js="hideAnswer"
+                >Hide Answer</a
+              >
             </button>
           </div>
-          <p hidden>It´s the highest finish you can throw, a 170 points</p>
+          <p hidden data-js="answerText">
+            It´s the highest finish you can throw, a 170 points
+          </p>
           <div class="tags">
             <p>#darts</p>
             <p>#170</p>
@@ -120,6 +131,11 @@
           <li class="bookmark-button">
             <a href="./bookmarks.html">
               <i class="fas fa-bookmark fa-3x navbar-buttons"></i>
+            </a>
+          </li>
+          <li class="form-button">
+            <a href="./form.html">
+              <i class="fas fa-plus fa-3x navbar-buttons"></i>
             </a>
           </li>
           <li class="profile-button">
