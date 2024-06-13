@@ -3,9 +3,3 @@
 @import "./cards.css";
 @import "./footer.css";
 @import "./cards-profile.css";
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
