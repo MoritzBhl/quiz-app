@@ -1,6 +1,5 @@
 // Create new card and show them below the question cards
 const questionForm = document.querySelector('[data-js="questionForm"]');
-const submit = document.querySelector('[data-js="submit"]');
 
 questionForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -15,7 +14,7 @@ questionForm.addEventListener("submit", (event) => {
             <i class="fas fa-bookmark fa-2xl card-bookmark"></i>
           </a>
           <div class="button-section">
-            <button class="answer-button">
+            <button class="answer-button" data-js="newAnswerButton">
               <a href="" class="show-answer">Show Answer</a>
             </button>
           </div>
@@ -27,4 +26,9 @@ questionForm.addEventListener("submit", (event) => {
   document.body.append(newSection);
   event.target.reset();
   formElements.newQuestion.focus();
+  // Prevent the answer button from refreshing, when klicking
+  const newAnswerButton = document.querySelector('[data-js="newAnswerButton"]');
+  newAnswerButton.addEventListener("click", (event) => {
+    event.preventDefault();
+  });
 });
