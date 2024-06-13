@@ -38,7 +38,9 @@
   border: 1px solid #806c59;
   border-radius: 10px;
 }
-
+.hidden {
+  display: none;
+}
 .answer-button:hover {
   background-color: gray;
 }
@@ -53,4 +55,5 @@
   display: flex;
   justify-content: space-around;
   gap: 15px;
+  list-style: none;
 }
