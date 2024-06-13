@@ -1,5 +1,5 @@
 // For new cards
-const newQuestionCard = document.querySelector('[data-js="newQuestionCard"]');
+const newQuestionCard = document.querySelector('[data-js="form"]');
 // For calculate character
 const amountLeftQuestion = document.querySelector(
   '[data-js="amountLeftQuestion"]'
