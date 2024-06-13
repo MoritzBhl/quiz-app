@@ -4,6 +4,8 @@
 }
 
 .submit-button {
+  width: 30%;
+  align-self: center;
 }
 
 .terms-and-conditions {
@@ -11,7 +13,41 @@
   gap: 10px;
 }
 
-.button-counter {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.div-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.question-counter {
+  margin-bottom: 10px;
+}
+
+.dark-mode-setting {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.toggle-button {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.setting-description {
+  font-weight: bold;
+}
+
+/* Variable für gleichen abstand nach rechts für die buttons */
