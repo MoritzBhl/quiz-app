@@ -11,14 +11,11 @@
     />
     <script src="./form.js" defer></script>
   </head>
-  <header>
-    <h1 class="header">Add New Question Cards</h1>
-  </header>
+  <h1 class="header">Add New Question Cards</h1>
   <body id="home">
     <main>
-      <form data-js="newQuestionCard">
+      <form data-js="form">
         <fieldset class="card">
-          <legend></legend>
           <label for="questionInput">Your Question:</label>
           <textarea
             data-js="questionInput"
@@ -36,7 +33,6 @@
           </span>
         </p>
         <fieldset class="card">
-          <legend></legend>
           <label for="answerInput">Your Answer:</label>
           <textarea
             data-js="answerInput"
@@ -57,33 +53,31 @@
         </fieldset>
         <fieldset class="card">
           <label for="submit"></label>
-          <button type="submit" id="submit" name="submit" data-js="submit">
-            Submit
-          </button>
+          <button type="submit" id="submit" data-js="submit">Submit</button>
         </fieldset>
       </form>
     </main>
     <footer class="footer">
       <nav class="navbar">
         <ul class="navbar-row">
-          <li class="home-button">
+          <li class="footer-button">
             <a href="./index.html">
-              <i class="fas fa-home fa-3x navbar-buttons"></i>
+              <i class="fas fa-home fa-3x navbar-icon"></i>
             </a>
           </li>
-          <li class="bookmark-button">
+          <li class="footer-button">
             <a href="./bookmarks.html">
-              <i class="fas fa-bookmark fa-3x navbar-buttons"></i>
+              <i class="fas fa-bookmark fa-3x navbar-icon"></i>
             </a>
           </li>
-          <li class="form-button">
+          <li class="footer-button">
             <a href="">
-              <i class="fas fa-plus fa-3x navbar-buttons"></i>
+              <i class="fas fa-plus fa-3x navbar-icon"></i>
             </a>
           </li>
-          <li class="profile-button">
+          <li class="footer-button">
             <a href="./profilepage.html">
-              <i class="fas fa-user fa-3x navbar-buttons"></i>
+              <i class="fas fa-user fa-3x navbar-icon"></i>
             </a>
           </li>
         </ul>
