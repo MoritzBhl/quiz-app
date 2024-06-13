@@ -16,35 +16,14 @@
   min-height: 8vh;
 }
 
-.home-button {
+.footer-button {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-basis: 25%;
 }
 
-.bookmark-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 25%;
-}
-
-.profile-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 25%;
-}
-
-.form-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 25%;
-}
-
-.navbar-buttons {
+.navbar-icon {
   color: #806c59;
 }
 
