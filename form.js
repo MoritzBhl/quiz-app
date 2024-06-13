@@ -32,7 +32,7 @@ newQuestionCard.addEventListener("submit", (event) => {
   const newSection = document.createElement("section");
   newSection.classList.add("card");
   newSection.innerHTML = `
-  <h2>${data.newQuestion}</h2>
+  <h2>${data.questionInput}</h2>
   <a href="">
             <i class="fas fa-bookmark fa-2xl card-bookmark"></i>
           </a>
@@ -41,14 +41,14 @@ newQuestionCard.addEventListener("submit", (event) => {
               <a href="" class="show-answer">Show Answer</a>
             </button>
           </div>
-          <p hidden>${data.newAnswer}</p>
+          <p hidden>${data.answerInput}</p>
           <div class="tags">
             <p>#${data.tag}</p>
           </div>
   `;
   document.body.append(newSection);
   event.target.reset();
-  formElements.newQuestion.focus();
+  formElements.questionInput.focus();
   // Prevent the answer button from refreshing, when klicking
   const newAnswerButton = document.querySelector('[data-js="newAnswerButton"]');
   newAnswerButton.addEventListener("click", (event) => {
