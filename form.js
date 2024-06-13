@@ -1,11 +1,34 @@
-// Create new card and show them below the question cards
-const questionForm = document.querySelector('[data-js="questionForm"]');
+// For new cards
+const newQuestionCard = document.querySelector('[data-js="newQuestionCard"]');
+// For calculate character
+const amountLeftQuestion = document.querySelector(
+  '[data-js="amountLeftQuestion"]'
+);
+const amountLeftAnswer = document.querySelector('[data-js="amountLeftAnswer"]');
+const questionInput = document.querySelector('[data-js="questionInput"]');
+const answerInput = document.querySelector('[data-js="answerInput"]');
+const maxLengthQuestion = questionInput.getAttribute("maxLength");
+const maxLengthAnswer = answerInput.getAttribute("maxLength");
+// -----------------------------------------------------------------------------------------
 
-questionForm.addEventListener("submit", (event) => {
+function calculateCharacters(totalQuestion, totalAnswer) {
+  amountLeftQuestion.textContent = totalQuestion;
+  amountLeftAnswer.textContent = totalAnswer;
+}
+newQuestionCard.addEventListener("input", (event) => {
+  calculateCharacters(
+    maxLengthQuestion - questionInput.value.length,
+    maxLengthAnswer - answerInput.value.length
+  );
+});
+// -----------------------------------------------------------------------------------------
+// Create new card and show them below the question cards
+newQuestionCard.addEventListener("submit", (event) => {
   event.preventDefault();
   const formElements = event.target.elements;
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
+  // Create new card
   const newSection = document.createElement("section");
   newSection.classList.add("card");
   newSection.innerHTML = `
