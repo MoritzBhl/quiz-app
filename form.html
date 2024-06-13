@@ -15,7 +15,40 @@
     <h1 class="header">Add New Question Cards</h1>
   </header>
   <body id="home">
-    <main></main>
+    <main>
+      <form>
+        <fieldset class="card">
+          <legend></legend>
+          <label for="new-question">Your Question:</label>
+          <textarea
+            name="new-question"
+            id="new-question"
+            minlength="30"
+            rows="10"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset class="card">
+          <legend></legend>
+          <label for="new-answer">Your Answer:</label>
+          <textarea
+            name="new-answer"
+            id="new-answer"
+            minlength="30"
+            rows="10"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset class="card">
+          <label for="tag">Tag:</label>
+          <input type="text" name="tag" id="tag" maxlength="20" required />
+        </fieldset>
+        <fieldset class="card">
+          <label for="submit"></label>
+          <button type="submit" id="submit" name="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
     <footer class="footer">
       <nav class="navbar">
         <ul class="navbar-row">
