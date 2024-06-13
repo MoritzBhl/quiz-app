@@ -1,6 +1,5 @@
 const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"]');
-const answerButton = document.querySelector('[data-js="answerButton"]');
-const showAnswer = document.querySelector('[data-js="showAnswer"]');
+const showAnswerButton = document.querySelector('[data-js="showAnswerButton"]');
 const answerText = document.querySelector('[data-js="answerText"]');
 
 // Toggle for card bookmark icon
@@ -9,12 +8,11 @@ bookmarkIcon.addEventListener("click", () => {
 });
 
 // Toggle the answer text and show/hide answer/hide text
-answerButton.addEventListener("click", (event) => {
-  event.preventDefault();
+showAnswerButton.addEventListener("click", (event) => {
   answerText.toggleAttribute("hidden");
-  if (showAnswer.textContent === "Show Answer") {
-    showAnswer.textContent = "Hide Answer";
+  if (answerText.hasAttribute("hidden")) {
+    showAnswerButton.textContent = "Show Answer";
   } else {
-    showAnswer.textContent = "Show Answer";
+    showAnswerButton.textContent = "Hide Answer";
   }
 });
