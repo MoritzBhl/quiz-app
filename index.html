@@ -11,38 +11,31 @@
     />
     <script src="./index.js" defer></script>
   </head>
-  <header>
-    <h1 class="header">Sport Quiz App</h1>
-  </header>
+  <h1 class="header">Sport Quiz App</h1>
   <body id="home">
     <main>
       <section class="all-cards-body">
         <section class="card question-1">
           <h2>What ist the so called "Big Fish" in Darts?</h2>
-          <a href="#question-1">
+          <button class="button-bookmark">
             <i
               class="fas fa-bookmark fa-2xl card-bookmark toggle-bookmark"
               data-js="bookmarkIcon"
             ></i>
-          </a>
+          </button>
           <div class="button-section">
-            <button class="answer-button" data-js="answerButton">
-              <a href="" class="show-answer" data-js="showAnswer"
-                >Show Answer</a
-              >
-              <a href="" hidden class="hidden" data-js="hideAnswer"
-                >Hide Answer</a
-              >
+            <button class="answer-button" data-js="showAnswerButton">
+              Show Answer
             </button>
           </div>
           <p hidden data-js="answerText">
             It´s the highest finish you can throw, a 170 points
           </p>
-          <div class="tags">
-            <p>#darts</p>
-            <p>#170</p>
-            <p>#big Fish</p>
-          </div>
+          <ul class="tags">
+            <li>#darts</li>
+            <li>#170</li>
+            <li>#bigFish</li>
+          </ul>
         </section>
         <section class="card question-2">
           <h2>Who just won the mens champions league final?</h2>
@@ -123,24 +116,24 @@
     <footer class="footer">
       <nav class="navbar">
         <ul class="navbar-row">
-          <li class="home-button">
+          <li class="footer-button">
             <a href="">
-              <i class="fas fa-home fa-3x navbar-buttons"></i>
+              <i class="fas fa-home fa-3x navbar-icon"></i>
             </a>
           </li>
-          <li class="bookmark-button">
+          <li class="footer-button">
             <a href="./bookmarks.html">
-              <i class="fas fa-bookmark fa-3x navbar-buttons"></i>
+              <i class="fas fa-bookmark fa-3x navbar-icon"></i>
             </a>
           </li>
-          <li class="form-button">
+          <li class="footer-button">
             <a href="./form.html">
-              <i class="fas fa-plus fa-3x navbar-buttons"></i>
+              <i class="fas fa-plus fa-3x navbar-icon"></i>
             </a>
           </li>
-          <li class="profile-button">
+          <li class="footer-button">
             <a href="./profilepage.html">
-              <i class="fas fa-user fa-3x navbar-buttons"></i>
+              <i class="fas fa-user fa-3x navbar-icon"></i>
             </a>
           </li>
         </ul>
