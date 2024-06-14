@@ -11,10 +11,11 @@ const maxLengthQuestion = questionInput.getAttribute("maxLength");
 const maxLengthAnswer = answerInput.getAttribute("maxLength");
 // -----------------------------------------------------------------------------------------
 
-function calculateCharacters(totalQuestion, totalAnswer) {
-  amountLeftQuestion.textContent = totalQuestion;
-  amountLeftAnswer.textContent = totalAnswer;
+function calculateCharacters(totalCharactersQuestion, totalCharactersAnswer) {
+  amountLeftQuestion.textContent = totalCharactersQuestion;
+  amountLeftAnswer.textContent = totalCharactersAnswer;
 }
+
 newQuestionCard.addEventListener("input", (event) => {
   calculateCharacters(
     maxLengthQuestion - questionInput.value.length,
@@ -33,25 +34,27 @@ newQuestionCard.addEventListener("submit", (event) => {
   newSection.classList.add("card");
   newSection.innerHTML = `
   <h2>${data.questionInput}</h2>
-  <a href="">
-            <i class="fas fa-bookmark fa-2xl card-bookmark"></i>
-          </a>
+  <button class="button-bookmark">
+            <i
+              class="fas fa-bookmark fa-2xl card-bookmark toggle-bookmark"
+              data-js="bookmarkIcon"
+            ></i>
+          </button>
           <div class="button-section">
-            <button class="answer-button" data-js="newAnswerButton">
-              <a href="" class="show-answer">Show Answer</a>
+            <button class="answer-button" data-js="showAnswerButton">
+              Show Answer
             </button>
           </div>
-          <p hidden>${data.answerInput}</p>
-          <div class="tags">
-            <p>#${data.tag}</p>
-          </div>
+          <p hidden data-js="answerText">
+            ${data.answerInput}
+          </p>
+          <ul class="tags">
+            <li>${data.tag}</li>
+          </ul>
   `;
+  {
+  }
   document.body.append(newSection);
   event.target.reset();
   formElements.questionInput.focus();
-  // Prevent the answer button from refreshing, when klicking
-  const newAnswerButton = document.querySelector('[data-js="newAnswerButton"]');
-  newAnswerButton.addEventListener("click", (event) => {
-    event.preventDefault();
-  });
 });
