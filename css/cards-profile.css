@@ -1,16 +1,18 @@
+@import "./theme.css";
+
 .form {
-  gap: 10px;
+  gap: var(--gap-profile);
   padding-bottom: 20px;
 }
 
 .submit-button {
-  width: 30%;
+  width: 20%;
   align-self: center;
 }
 
 .terms-and-conditions {
   display: flex;
-  gap: 10px;
+  gap: var(--gap-profile);
 }
 
 .div-button {
@@ -24,7 +26,7 @@
 .button {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: var(--gap-profile);
   width: 50%;
   border: 1px solid black;
   border-radius: 10px;
@@ -34,20 +36,55 @@
   margin-bottom: 10px;
 }
 
-.dark-mode-setting {
-  display: flex;
-  justify-content: flex-start;
-  gap: 40px;
-}
-
-.toggle-button {
-  width: 50%;
-  border: 1px solid black;
-  border-radius: 10px;
+.header-setting {
+  text-align: center;
 }
 
 .setting-description {
   font-weight: bold;
 }
 
-/* Variable für gleichen abstand nach rechts für die buttons */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.3s;
+}
+
+.toggle-switch-label:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle-switch-input:checked + .toggle-switch-label {
+  background-color: #2196f3;
+}
+
+.toggle-switch-input:checked + .toggle-switch-label:before {
+  transform: translateX(26px);
+}
