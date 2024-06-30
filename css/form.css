@@ -1,0 +1,15 @@
+.card-header {
+  padding-top: 10px;
+}
+
+.card-textarea {
+  margin-top: 20px;
+}
+
+.submit-button {
+  border-radius: 34px;
+  border: none;
+  display: block;
+  width: 15%;
+  margin: 0 auto;
+}

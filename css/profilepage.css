@@ -88,3 +88,8 @@
 .toggle-switch-input:checked + .toggle-switch-label:before {
   transform: translateX(26px);
 }
+
+.dark-mode {
+  color: white;
+  background-color: black;
+}

@@ -16,13 +16,15 @@
     <main>
       <form data-js="form">
         <fieldset class="card">
-          <label for="questionInput">Your Question:</label>
+          <label class="card-header" for="questionInput">Your Question:</label>
           <textarea
+            class="card-textarea"
             data-js="questionInput"
             name="questionInput"
             id="questionInput"
             maxlength="150"
             rows="10"
+            placeholder="What is the so called 'Bed and Breakfast' in Darts?"
             required
           ></textarea>
         </fieldset>
@@ -33,13 +35,15 @@
           </span>
         </p>
         <fieldset class="card">
-          <label for="answerInput">Your Answer:</label>
+          <label class="card-header" for="answerInput">Your Answer:</label>
           <textarea
+            class="card-textarea"
             data-js="answerInput"
             name="answerInput"
             id="answerInput"
             maxlength="150"
             rows="10"
+            placeholder="It´s throwing 26 points."
             required
           ></textarea>
         </fieldset>
@@ -49,12 +53,24 @@
         </p>
         <fieldset class="card card__tag">
           <label for="tag">Tag:</label>
-          <input type="text" name="tag" id="tag" maxlength="20" required />
+          <input
+            type="text"
+            name="tag"
+            id="tag"
+            maxlength="20"
+            placeholder="#bedandbreakfast"
+            required
+          />
         </fieldset>
-        <fieldset class="card">
-          <label for="submit"></label>
-          <button type="submit" id="submit" data-js="submit">Submit</button>
-        </fieldset>
+        <label for="submit"></label>
+        <button
+          class="submit-button"
+          type="submit"
+          id="submit"
+          data-js="submit"
+        >
+          Submit
+        </button>
       </form>
     </main>
     <footer class="footer">
